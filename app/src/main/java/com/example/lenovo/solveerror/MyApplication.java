@@ -1,7 +1,8 @@
 package com.example.lenovo.solveerror;
 
 import android.app.Application;
-import android.util.Log;
+
+import com.yashish.library.solveerror.SolveBug;
 
 /**
  * Created by Lenovo on 26-03-2018.
@@ -9,6 +10,7 @@ import android.util.Log;
 
 public class MyApplication extends Application {
 
+/*
     private Thread.UncaughtExceptionHandler androidDefaultUEH;
 
     private Thread.UncaughtExceptionHandler handler = new Thread.UncaughtExceptionHandler() {
@@ -17,13 +19,15 @@ public class MyApplication extends Application {
             androidDefaultUEH.uncaughtException(thread, ex);
         }
     };
+*/
 
     @Override
     public void onCreate() {
         super.onCreate();
         //new LogHandler(this);
+        SolveBug.apply();
 
-        androidDefaultUEH = Thread.getDefaultUncaughtExceptionHandler();
-        Thread.setDefaultUncaughtExceptionHandler(handler);
+        /*androidDefaultUEH = Thread.getDefaultUncaughtExceptionHandler();
+        Thread.setDefaultUncaughtExceptionHandler(handler);*/
     }
 }
