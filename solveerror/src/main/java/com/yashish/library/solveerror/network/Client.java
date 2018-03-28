@@ -1,6 +1,7 @@
-package com.yashish.library.solveerror.models;
+package com.yashish.library.solveerror.network;
 
 import com.google.gson.GsonBuilder;
+import com.yashish.library.solveerror.Constants;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +37,7 @@ public class Client {
                         }
                     })
                     .build();
-            Retrofit r = new Retrofit.Builder().baseUrl("https://api.stackexchange.com/").
+            Retrofit r = new Retrofit.Builder().baseUrl(Constants.BASE_URL).
                     addConverterFactory(GsonConverterFactory.create(
                             new GsonBuilder().create())).client(client)
                     .build();
