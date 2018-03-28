@@ -36,7 +36,7 @@ public class Client {
                         }
                     })
                     .build();
-            Retrofit r = new Retrofit.Builder().baseUrl("http://api.stackexchange.com/").
+            Retrofit r = new Retrofit.Builder().baseUrl("https://api.stackexchange.com/").
                     addConverterFactory(GsonConverterFactory.create(
                             new GsonBuilder().create())).client(client)
                     .build();
