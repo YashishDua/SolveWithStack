@@ -20,7 +20,7 @@
         </activity>
 
         <service
-            android:name="com.yashish.library.solveerror.services.MyService">
+            android:name="com.yashish.library.solvewithstack.services.MyService">
         </service>
     </application>
 
