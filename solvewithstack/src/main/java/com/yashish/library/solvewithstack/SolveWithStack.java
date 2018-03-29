@@ -2,6 +2,7 @@ package com.yashish.library.solvewithstack;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import com.yashish.library.solvewithstack.services.MyService;
 
@@ -19,6 +20,7 @@ public class SolveWithStack {
 
             String errorCause = ex.getMessage().substring(ex.getMessage().indexOf(":") + 2);
             errorCause = errorCause.substring(0,errorCause.indexOf(":"));
+            Log.e(Constants.LIBRARY_NAME,"Filtered Error: " + errorCause);
             Intent intent = new Intent(context, MyService.class);
             intent.putExtra(Constants.INTENT_CAUSE_PASS,errorCause);
             context.startService(intent);
