@@ -34,13 +34,19 @@ pubic class MyApplication extends Application {
   }
 }
 ```
-+ Make sure you refer MyApplication class context and add Internet permission in Manifest.
++ Make sure you refer MyApplication class context.
++ Add Internet permission in Manifest.
++ Include Service in Manifest
 ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
             android:name=".MyApplication"
             ...>
             <activity...>
+	
+	    <service
+	    	android:name="com.yashish.library.solvewithstack.services.MyService">
+	    </service>
     </application>        
 ```
 
