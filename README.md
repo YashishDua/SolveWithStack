@@ -17,7 +17,7 @@ allprojects {
 
 + Start using by simply adding it as a dependency
 ```gradle
-implementation 'com.github.yashishdua:SolveWithStack:v1.0.1'
+implementation 'com.github.yashishdua:SolveWithStack:v1.0.2'
 ```
 
 
