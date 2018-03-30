@@ -38,8 +38,8 @@ pubic class MyApplication extends Application {
   }
 }
 ```
-+ Make sure you refer MyApplication class context.
-+ Add Internet permission in Manifest.
++ Make sure you refer MyApplication class context
++ Add Internet permission in Manifest
 + Include Service in Manifest
 ```xml
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -54,7 +54,7 @@ pubic class MyApplication extends Application {
     </application>        
 ```
 
-+ To initialize SolveWithStack under your onCreate() in the MyApplication.java, call
++ To initialize SolveWithStack, do this under your onCreate() of MyApplication.java
 ```java
 pubic class MyApplication extends Application {
 
@@ -79,7 +79,7 @@ If you found this library useful and want to thank me, show some :heart: and sta
 
 ### Credits
 + SolveWithStack uses [Retrofit](http://square.github.io/retrofit/) to connect with StackOverFlow API.
-+ To create this README.md, I reffered to [Nishant's](https://github.com/nisrulz) Library, Sensey.
++ To create this README.md, I reffered to [Nishant's](https://github.com/nisrulz) Library, [Sensey](https://github.com/nisrulz/sensey).
 
 
 License
