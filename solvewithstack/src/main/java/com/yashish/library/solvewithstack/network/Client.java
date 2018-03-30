@@ -1,7 +1,7 @@
 package com.yashish.library.solvewithstack.network;
 
 import com.google.gson.GsonBuilder;
-import com.yashish.library.solvewithstack.Constants;
+import com.yashish.library.solvewithstack.utils.Constants;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

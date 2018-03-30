@@ -1,6 +1,6 @@
 package com.yashish.library.solvewithstack.network;
 
-import com.yashish.library.solvewithstack.Constants;
+import com.yashish.library.solvewithstack.utils.Constants;
 import com.yashish.library.solvewithstack.models.StackAnswer;
 
 import retrofit2.Call;
