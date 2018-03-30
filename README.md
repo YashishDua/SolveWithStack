@@ -1,6 +1,10 @@
 # SolveWithStack
 
-<strong>This library will help you to reach out to best possible answer for your bug/error on stackoverflow from your Android Studio Console only.</strong>
+<strong>This library will help you to reach out to best possible answer for your bug/error available on stackoverflow and will show it in your Android Studio Console only.</strong>
+
+<div align="center">
+  <img src="/solvewithstack.PNG" />
+</div>
 
 
 # Including in your project
@@ -17,7 +21,7 @@ allprojects {
 
 + Start using by simply adding it as a dependency
 ```gradle
-implementation 'com.github.yashishdua:SolveWithStack:v1.0.2'
+implementation 'com.github.yashishdua:SolveWithStack:v1.0.3'
 ```
 
 
@@ -45,7 +49,7 @@ pubic class MyApplication extends Application {
             <activity...>
 	
 	    <service
-	    	android:name="com.yashish.library.solvewithstack.services.MyService">
+	    	android:name="com.yashish.library.solvewithstack.services.StackAPIBackgroundService">
 	    </service>
     </application>        
 ```
